@@ -1,3 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemelandiaServices</title>
+</head>
+<body>
+    <h1>MemelandiaServices</h1>
+    <p>Este é um microserviço desenvolvido como parte do projeto Memelandia, responsável por fornecer serviços essenciais para a aplicação.</p>
+    <h2>Descrição</h2>
+    <p>O MemelandiaServices é um microserviço que oferece funcionalidades específicas para a aplicação Memelandia. Ele é desenvolvido utilizando Java e Spring Boot, e se comunica com outros microserviços através de APIs REST.</p>
+    <h2>Instalação</h2>
+    <ol>
+        <li>Clone o repositório: <code>git clone https://github.com/caioskywalker/Memelandia.git</code></li>
+        <li>Navegue até o diretório do microserviço: <code>cd Memelandia/MemelandiaServices</code></li>
+        <li>Compile e construa o projeto utilizando Maven: <code>mvn clean install</code></li>
+        <li>Configure o banco de dados conforme as instruções no arquivo <code>application.properties</code>.</li>
+        <li>Execute o microserviço: <code>java -jar target/MemelandiaServices-0.0.1-SNAPSHOT.jar</code></li>
+    </ol>
+    <h2>Configuração do Banco de Dados</h2>
+    <p>O microserviço utiliza um banco de dados relacional para armazenar os dados. As configurações do banco de dados estão no arquivo <code>application.properties</code>. Certifique-se de ajustar as configurações de acordo com o seu ambiente.</p>
+    <h2>Endpoints</h2>
+    <p>O MemelandiaServices expõe os seguintes endpoints REST:</p>
+    <ul>
+        <li><code>GET /api/memes</code>: Retorna uma lista de memes.</li>
+        <li><code>POST /api/memes</code>: Adiciona um novo meme.</li>
+        <li><code>GET /api/memes/{id}</code>: Retorna os detalhes de um meme específico.</li>
+        <li><code>PUT /api/memes/{id}</code>: Atualiza as informações de um meme existente.</li>
+        <li><code>DELETE /api/memes/{id}</code>: Remove um meme.</li>
+    </ul>
+    <h2>Classes Utilizadas</h2>
+    <p>O projeto utiliza várias classes para gerenciar a lógica de negócios e a persistência de dados. Algumas das principais classes incluem:</p>
+    <ul>
+        <li><code>MemesController</code>: Controlador REST que gerencia as requisições relacionadas aos memes.</li>
+        <li><code>Meme</code>: Classe de entidade que representa um meme no banco de dados.</li>
+        <li><code>MemeRepository</code>: Interface de repositório que estende <code>JpaRepository</code> para operações CRUD.</li>
+        <li><code>MemeService</code>: Classe de serviço que contém a lógica de negócios para manipulação de memes.</li>
+    </ul>
+    <h2>Uso</h2>
+    <p>Para utilizar o microserviço, faça requisições HTTP para os endpoints mencionados acima. Você pode usar ferramentas como Postman ou cURL para testar as APIs.</p>
+    <h2>Contribuição</h2>
+    <p>Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.</p>
+    <h2>Licença</h2>
+    <p>Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.</p>
+</body>
+</html>
+
+
+
 # Memelandia
 Projeto final da Escola Britânica de Artes Criativas
 
